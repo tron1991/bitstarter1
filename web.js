@@ -2,7 +2,7 @@ var express = require('express') , http = require('http') , fs = require('fs');
 var app = express();
 app.set('port', process.env.PORT || 3000);
 app.get('/', function(req,res){ 
-    fs.readFile(__dirname +'/public/index.html', 'utf8', function(err,text){ 
+    fs.readFile(__dirname +'/index.html', 'utf8', function(err,text){ 
         res.send(text); 
     });
 });
