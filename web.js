@@ -12,7 +12,7 @@ mybuffer = new Buffer(fs.readFileSync(filename));
 mystring = mybuffer.toString();
 
 app.get('/', function(request, response){
-    response.send(html);
+    response.send(mystring);
 });
 
 var port=process.env.PORT || 5000;
