@@ -1,15 +1,21 @@
+#!/usr/bin/env node
 
 var fs = require('fs');
-var htmlfile = "index.html";
+var express = require('express');
 
 var app = express.createServer(express.logger());
+var filename = "index.html";
+var mybuffer = new Buffer();
+var mystring;
+
+mybuffer = new Buffer(fs.readFileSync(filename));
+mystring = mybuffer.toString();
 
 app.get('/', function(request, response){
-    var html = fs.readFileSync(htmlfile).toString();
     response.send(html);
 });
 
-var port=process.env.PORT || 8080;
+var port=process.env.PORT || 5000;
 app.listen(port,function(){
     console.log("Listening on" + port);
 });
