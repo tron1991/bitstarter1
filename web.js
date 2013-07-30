@@ -1,21 +1,11 @@
-#!/usr/bin/env node
-
-var fs = require('fs');
-var express = require('express');
-
-var app = express.createServer(express.logger());
-var filename = "index.html";
-var mybuffer = new Buffer();
-var mystring;
-
-mybuffer = new Buffer(fs.readFileSync(filename));
-mystring = mybuffer.toString();
-
-app.get('/', function(request, response){
-    response.send(mystring);
+var express = require('express') , http = require('http') , fs = require('fs');
+var app = express();
+app.set('port', process.env.PORT || 3000);
+app.get('/', function(req,res){ 
+    fs.readFile(__dirname +'/public/index.html', 'utf8', function(err,text){ 
+        res.send(text); 
+    });
 });
-
-var port=process.env.PORT || 5000;
-app.listen(port,function(){
-    console.log("Listening on" + port);
+http.createServer(app).listen(app.get('port'), function(){ 
+    console.log('Server started at ' + app.get('port')); 
 });
