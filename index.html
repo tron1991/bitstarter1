@@ -1,8 +1,8 @@
-<!DOCTYPEAOA html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <title>My First Bitstarter</title>
+  <title>NANA: Wearable Technology for Elderly</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="https://d396qusza40orc.cloudfront.net/startup%2Fcode%2Fbootstrap-combined.no-icons.min.css">
   <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/3.0.2/css/font-awesome.css">
@@ -23,7 +23,7 @@
   <script  src="https://d396qusza40orc.cloudfront.net/startup%2Fcode%2Fcode%2Fjquery.js"></script>
   <script src="https://d396qusza40orc.cloudfront.net/startup%2Fcode%2Fbootstrap.js"></script>
 
-  <link href="http://fonts.googleapis.com/css?family=Mate+SC" rel="stylesheet" type="text/css">
+  <link href="http://fonts.googleapis.com/css?family=Text+Me+One" rel="stylesheet" type="text/css">
 
   <link href="http://fonts.googleapis.com/css?family=Ubuntu:300,400,700,300italic,400italic,500italic,700italic" rel="stylesheet" type="text/css">
   <link href="http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,300,400,600,700,800" rel="stylesheet" type="text/css">
@@ -66,17 +66,20 @@ margin-top: 50px;
 margin-bottom:50px;
 }
 
+.carousel-inner { text-align: center; }
+
+.carousel .item > img { display: inline-block; }
 
     body{
-      font-family:'Open Sans', Helvetica, Arial, sans-serif;
+      font-family:'Text Me One', Arial, sans-serif;
     }
 
     .maintitle {
-    font-family: 'Mate SC', serif;
+    font-family: 'Text Me One', sans-serif;
     text-align: center; }
 
     .heading, .subheading {
-      font-family: 'Ubuntu', Helvetica, Arial, sans-serif;
+      font-family: 'Text Me One', sans-serif;
       text-align: center;
     }
 
@@ -170,6 +173,7 @@ height: 100%;
   margin: 0 auto;
  }
 
+span.centered   {text-align:center;}
 
     </style>
 
@@ -196,7 +200,7 @@ height: 100%;
   <div class="navbar-inner">
     <div class="container">
       <button type="button" class="btn btn-navbar"
-	            data-toggle="collaspe" data-target=".nav-collaspe">
+	                  data-toggle="collaspe" data-target=".nav-collaspe">
 	<span class="icon-bar"></span>
 	<span class="icon-bar"></span>
 	<span class="icon-bar"></span>
@@ -204,10 +208,10 @@ height: 100%;
       <a class="brand" href="#">NANA</a>
      <div class="nav-collaspe collaspe">
        <ul class="nav">
-	  <li class="active"><a href="#">Home</a></li>
-	   <li><a href="#about">About</a></li>
-	    <li><a href="#features">Features</a></li> 
-	    </ul>
+	   <!--<li class="active"><a href="#">Home</a></li>
+	      <li><a href="#about">About</a></li>
+	          <li><a href="#features">Features</a></li>--> 
+		      </ul>
        </div> <!--/.nav-collaspe -->
      </div>
     </div>
@@ -243,24 +247,24 @@ height: 100%;
 <div id="this-carousel-id" class="carousel slide"><!-- class of slide for animation -->
   <div class="carousel-inner">
     <div class="item active"><!-- class of active since it's the first item -->
-      <img src="http://www.ivantron.com/pulse_1.png" alt="" height="600" width="1200"/>
+      <img src="http://www.ivantron.com/pulse_1.png" alt="" height="400" width="800"/>
       <div class="carousel-caption">
         <p>Indepth Heart Monitoring</p>
       </div>
     </div>
     <div class="item">
-      <img src="http://www.ivantron.com/pulse_2.png" alt="" height="600" width="1200"  
+      <img src="http://www.ivantron.com/pulse_2.png" alt="" height="400" width="800"  
       <div class "carousel-caption">
         <p>Deviation in Heart Monitoring</p>
       </div>
         <div class="item">
-      <img src="http://www.ivantron.com/location.png" alt="" height="600" width="1200"/>
+      <img src="http://www.ivantron.com/location.png" alt="" height="400" width="800"/>
       <div class="carousel-caption">
-        <p>In-home location </p>
+        <p>In-home Location </p>
       </div>
     </div>
     <div class="item">
-      <img src="http://www.ivantron.com/relay.png" alt="" height="600" width="1200"/>
+      <img src="http://www.ivantron.com/relay.png" alt="" height="400" width="800"/>
       <div class="carousel-caption">
         <p>Home Control with Appliances</p>
       </div>
@@ -304,7 +308,7 @@ height: 100%;
               </div>
               <div class="span4">
                 <div class="linediv-r">
-                <h3>45</h3> <p>days left</p>
+                <h3>8</h3> <p>days left</p>
                 </div>
               </div>
             </div>
@@ -320,7 +324,15 @@ height: 100%;
           <div class="span6 offset3 order">
             <!-- Standard Bootstrap button. -->
             <!-- http://twitter.github.io/bootstrap/base-css.html#buttons -->
-            <button class="btn btn-success btn-large">Preorder</button>
+            
+<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+<input type="hidden" name="cmd" value="_s-xclick">
+<input type="hidden" name="encrypted" value="-----BEGIN PKCS7-----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-----END PKCS7-----
+">
+<input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+<img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+</form>
+
           </div>
           <!-- AddThis Button BEGIN -->
 <div class="addthis_toolbox addthis_default_style addthis_32x32_style">
@@ -335,7 +347,7 @@ height: 100%;
         </div>
 <div class="row-fluid section1">
   <div class="span7 copy">
-    <h3>Overview</h3>
+    <h3>Tweet Us @NANA_wear_tech</h3>
           <p>
             From this research and statistics we see a growing demand for helping our aging population. Our solution satisfies that demand by helping the elderly live comfortably and longer through a monitoring service. The current market solutions are not feasible as they only contain single components like fall detection. Our solution gives way to a full system that detects fall detection, heart rate, location sensing, and environmental controls. It has the power to make elderly living more comfortable and secure.
           </p>
@@ -348,16 +360,62 @@ height: 100%;
         </div>
        </div>
 
+<center>
+ <img src="http://www.ivantron.com/nana_layout.jpg" alt="" height="750" width="750">
+</center>
+
+
+<div class= "row-fluid section1">
+      <!-- Three columns of text below the carousel -->
+        <div class="span4 copy">
+          <img src="http://www.ivantron.com/rsz_heart.jpg" alt="" height="300" width="300">
+          <h2>Heart Detection</h2>
+          <p>Your heart is monitored with NANA. We measure heart signals for any inaccuracies and if large deviations occur an emergency distress call is sent.</p>
+        </div><!-- /.col-lg-4 -->
+        <div class="span4 copy">
+          <img src="http://www.ivantron.com/rsz_location.jpg" alt="" height="300" width="300">
+          <h2>In-Home Location</h2>
+          <p>With NANA your loved one is safe. We offer safety in the form of location sensing within the home. RFID tags will be dispersed throughout the home, and when NANA wereable is near location it will signal the base station. Properties like time, location, and mapping will be displayed.</p>
+        </div><!-- /.col-lg-4 -->
+         <div class="span4 copy">
+          <img src="http://www.ivantron.com/rsz_fall_detection.jpg" alt="" height="300" width="300">
+          <h2>Fall Detection</h2>
+          <p>When you fall, you appreciate a helping hand. NANA is that hand to help loved ones during these unpredictable falls.</p>
+      </div><!-- /.row -->
+      </div><!-- /.row -->
+
+<div class= "row-fluid section1">
+      <!-- Three columns of text below the carousel -->
+        <div class="span4 copy">
+          <img src="http://www.ivantron.com/rsz_1rsz_1emergency.jpg" alt="" height="300" width="300">
+          <h2>Emergency Prevention</h2>
+          <p>When you are in an emergency situation, NANA is equipped to send distress calls to our monitoring station. NANA watches for elevation in heart levels, fall alerts, or simply staying in one room to long.</p>
+        </div><!-- /.col-lg-4 -->
+        <div class="span4 copy">
+          <img src="http://www.ivantron.com/rsz_environ_control.jpg" alt="" height="300" width="300">
+          <h2>Environmental Control</h2>
+	<p>NANA is the first wearable device to control appliances within your home through voice or base station activation. Quite useful for our elderly citizens.</p>
+        </div><!-- /.col-lg-4 -->
+         <div class="span4 copy">
+          <img src="http://www.ivantron.com/rsz_voice.jpg" alt="" height="300" width="300">
+          <h2>Voice Integration</h2>
+          <p>"Would you like me to turn on your lights", said NANA. You can speak commands for basic usage or through emergency situations.
+      </div><!-- /.row -->
+     </div>	
+
+ <div class="row-fluid row1 rowleft heading">
+    <div class="span12">
+          <h1>Research Testing with NANA</h1>
+        </div>
+       </div>
 
         <div class="row-fluid section1">
         <div class="span6 copy">
-	    <h3>Heart Detection</h3>
-          <p>
-            Pulse will be continuously measured from the pulse sensor. The sensor will be outside our system/chest piece and always in contact with the skin to measure the pulse. The data will be collected and stored to our main system in the home. This data will help determine emergency situations and when to place phone calls. The primary reason for using pulse is to measure heart attacks and elevated heart scenarios.
-          </p>
+	      <h3>NANA validated by Elderly</h3>
+          <p>NANA had the privilege to work with research participants in our latest prototype. In our research we tested the following: heart measurements for accuracy, increased movement with heart accuracies, and an emergency situation. All situations were successful with NANA. We test normal breathing for our heart sensor accuracy. We perform the "Sit up Sit down" test as it will portray elderly movements accurately. Lasty, a simple squat exercise proves that NANA can detect a fall. This wearable technology is truly amazing.</p>
         </div>
 	<div class="span5 offset1 asset">
-          <img class="img-polaroid" src="http://ak3.picdn.net/shutterstock/videos/2909878/preview/stock-footage-blue-ecg-heart-monitor-line-with-moving-black-and-blue-background.jpg">
+          <iframe width="540" height="380" src="//www.youtube.com/embed/geq4odUwiyo" frameborder="0" allowfullscreen></iframe>
         </div>
       </div>
       <!--</div>-->
@@ -367,71 +425,191 @@ height: 100%;
       <!-- http://twitter.github.io/bootstrap/base-css.html#images -->
       <!-- http://placehold.it -->
       <div class="row-fluid row1 section1">
-	<div class="span5 offset1 asset">
-          <img class="img-polaroid" src="http://homepage.usask.ca/~xiy925/projects/fall%20detection%20sensor.png">
+	<div class="span5 asset">
+           <iframe width="540" height="380" src="//www.youtube.com/embed/rjDalt4xdCs" frameborder="0" allowfullscreen></iframe>
+
         </div>
 
 	<div class="span6 copy">
-	    <h3>Fall Detection</h3>
+	      <h3>NANA turns appliances ON</h3>
           <p>
-            It will operate all the time when consumer wears the device. It works by sensing the forces acting on the chest unit and if any big deviations were to occur, a huge spike would result. If the person is unable to respond to the automatic phone call, immediate assistance will be sent. Also, if the system does not detect any movement for an extended period of time, a phone call to the user will be made. This is primarily for detecting unconscious behavior and falls to the ground (account for no movement). 
+            NANA is not only a passive device, but active for the elderly person. NANA can turn appliances on/off with voice command as shown in the YouTube video. Elderly loose their motor movements which could impair their daily lives. With NANA, simple tasks around the house can be completed with little or no effort.
           </p>
         </div>
 
-  <div class="row-fluid section1">
-        <div class="span6 copy">
-          <h3>Home Control</h3>
-          <p>
-            The system will provide a small degree of environmental control. This will be provided by voice commands received by a small microphone on the chest unit, and the commands will be processed and appropriate actions will be taken. Example controls would include turning on and off lights, or the television. 
-          </p>
+  <div class="row-fluid row1 rowleft heading">
+    <div class="span12">
+          <h1>Doctors Love NANA</h1>
         </div>
-        <div class="span5 offset1 asset">
-          <img class="img-polaroid" src="http://www.yoursmarthome.co.uk/images/comfort/lighting.jpg">
+       </div>
+
+<center>
+<iframe width="640" height="480" src="//www.youtube.com/embed/VGnrTjmNsaI" frameborder="0" allowfullscreen></iframe>
+<center>
+
+
+<div class= "row-fluid section1">
+      <!-- Three columns of text below the carousel -->
+        <div class="span3 copy">
+          <img src="http://www.ivantron.com/rsz_dr_lori_letts.jpg" alt="" height="300" width="300">
+          <h2>Dr.Lori Letts</h2>
+          <p>Associate Professor in the School of Rehabilitation Science at McMaster University - "Nana is amazing especially for location sensing."</p>
+        </div><!-- /.col-lg-4 -->
+        <div class="span3 copy">
+          <img src="http://www.ivantron.com/rsz_1christopher_anand.jpg" alt="" height="300" width="300">
+          <h2>Dr.Christopher Anand</h2>
+          <p>Associate Professor of Computing and Software at McMaster University - "Nana's team executes well delivering a solution to a global problem."</p>
+        </div><!-- /.col-lg-4 -->
+         <div class="span3 copy">
+          <img src="http://www.ivantron.com/rsz_laurie_wishart.jpg" alt="" height="300" width="300">
+          <h2>Dr.Laurie Wishart</h2>
+          <p>Physiotherapist at University of Toronto - "Nana's ability to control your environment is brillant for people with certain diseases. A product that will change elderly living."</p>
+      </div><!-- /.row -->
+	 <div class="span3 copy">
+          <img src="http://www.ivantron.com/rsz_1alan_wassyng.jpg" alt="" height="300" width="300">
+          <h2>Dr.Alan Wassyng</h2>
+          <p>Director of McMaster Centre for Software Certification - "This team has developed a life-saving device. We need more engineers with this mindset. Nana will help the world."</p>
+      </div><!-- /.row -->
+      </div><!-- /.row -->
+
+<center>
+<!-- We define a new 'actions' div to contain statistics, order, and share buttons.-->
+        <div class="span5 row1 actions">
+          <div class="span8 offset2">
+            <div class="statistics">
+              <div class="span4">
+                <!-- linediv-l and linediv-r give dividing lines that look
+                different in horizontal and vertical layouts, illustrating
+                media queries. -->
+                <div class="linediv-l">
+                <h3>30</h3> <p>backers</p>
+                </div>
+              </div>
+              <div class="span4">
+                <div class="linediv-c">
+                  <h3>$60</h3> <p>of $10,000</p>
+                </div>
+              </div>
+              <div class="span4">
+                <div class="linediv-r">
+                <h3>8</h3> <p>days left</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="span10 offset1">
+            <!-- Bootstrap progress bar -->
+            <!-- http://twitter.github.io/bootstrap/components.html#progress -->
+            <div class="thermometer progress active">
+              <div class="bar bar-success" style="width: 4%"> </div>
+              <div class="bar bar-warning" style="width: 96%;"></div>
+           </div>
+          </div>
+          <div class="span6 offset3 order">
+            <!-- Standard Bootstrap button. -->
+            <!-- http://twitter.github.io/bootstrap/base-css.html#buttons -->
+      
+<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+<input type="hidden" name="cmd" value="_s-xclick">
+<input type="hidden" name="encrypted" value="-----BEGIN PKCS7-----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-----END PKCS7-----
+">
+<input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+<img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+</form>
+
+      
+</div>
+          <!-- AddThis Button BEGIN -->
+<div class="addthis_toolbox addthis_default_style addthis_32x32_style">
+<a class="addthis_button_preferred_1"></a>
+<a class="addthis_button_preferred_2"></a>
+<a class="addthis_button_compact"></a>
+<a class="addthis_counter addthis_bubble_style"></a>
+</div>
+<script type="text/javascript">var addthis_config = {"data_track_addressbar":true};</script>
+<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5223b915557b73e6"></script>
+<!-- AddThis Button END -->
         </div>
-      </div>
+<div class="row-fluid section1">
+  <div class="span7 copy">
+    <h3>Thank you for your support in our journey to make life enjoyable for our elderly population. Please help us fund NANA for finializing the prototype and getting approval from the government. Be sure to tweet us at @NANA_wear_tech</h3>
+        </div>
+</div>
+
+</center>
+
 
       <!-- This brings in jquery.js and bootstrap.js as dependencies. -->
       <!-- http://twitter.github.io/bootstrap/javascript.html#collapse -->
       <div class="row-fluid faq">
           <div class="span10 offset1">
-            <h3>FAQ</h3>
+            <h3>Questions about NANA</h3>
             <div class="accordion" id="accordion2">
               <div class="accordion-group">
                 <div class="accordion-heading">
                   <a class="accordion-toggle" data-toggle="collapse"
                      data-parent="#accordion2" href="#collapseOne">
-                    What does FAQ stand for?
+                    Where is NANA currently being built?
                   </a>
                 </div>
                 <div id="collapseOne" class="accordion-body collapse">
                   <div class="accordion-inner">
-                    Frequently Asked Question.
+                    NANA is built in Ontario, CAN with its goal to help all the elderly population.
                   </div>
                 </div>
               </div>
-              <div class="accordion-group">
+
+
+ <div class="accordion-group">
                 <div class="accordion-heading">
                   <a class="accordion-toggle" data-toggle="collapse"
                      data-parent="#accordion2" href="#collapseTwo">
-                    What's a Frequently Asked Question?
+                    Why should I donate to NANA?
                   </a>
                 </div>
                 <div id="collapseTwo" class="accordion-body collapse">
                   <div class="accordion-inner">
-                    A question which is commonly asked by users.
+                    Have you asked yourself this. What if your grandma passed becuase a fall occurred, and emergnecy was not quick enough. Or if your grandparent needed extra support at home. NANA is the solution to this problem and we hope others will start to follow and build elderly care solutions.
                   </div>
                 </div>
               </div>
-            </div>
-          </div>
+ <div class="accordion-group">
+                <div class="accordion-heading">
+                  <a class="accordion-toggle" data-toggle="collapse"
+                     data-parent="#accordion2" href="#collapseThree">
+                    How far is NANA in development?
+                  </a>
+                </div>
+                <div id="collapseThree" class="accordion-body collapse">
+                  <div class="accordion-inner">
+                    Currently, NANA is a standalone system that is wireless and has a base station. We are working on implementing networking capabilities into the product.
+                  </div>
+                </div>
+              </div>
+ <div class="accordion-group">
+                <div class="accordion-heading">
+                  <a class="accordion-toggle" data-toggle="collapse"
+                     data-parent="#accordion2" href="#collapseFour">
+                    How can you contact us?
+                  </a>
+                </div>
+                <div id="collapseFour" class="accordion-body collapse">
+                  <div class="accordion-inner">
+                   You can contact the NANA team to our CEO at eco.helpservices@gmail.com.
+                  </div>
+                </div>
+              </div>
 
+              
+           </div>
+          </div>
       </div>
 
       <!-- Not crucial, but we put this under a CC By-SA 3.0 license. -->
       <!-- http://creativecommons.org/licenses/ -->
       <div class="row-fluid footer">
         <div class="span12">
-          <p>This work is licensed under
+            <p>This work is licensed under
             the <a href="http://creativecommons.org/licenses/by-sa/3.0/">CC
               By-SA 3.0
             </a>, without all the cruft that would otherwise be
@@ -454,7 +632,3 @@ height: 100%;
   </body>
 </html>
   
-
-
-
-
